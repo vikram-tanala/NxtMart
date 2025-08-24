@@ -1,0 +1,48 @@
+.bg-container {
+  background-image: url('https://res.cloudinary.com/datm0tjmq/image/upload/v1754149997/Screenshot_2025-08-02_211512_p0tuhw.png');
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.form-container {
+  padding: 20px;
+  width: 300px;
+  height: 300px;
+  border-radius: 8px;
+  background-color: #e1cfcf;
+  display: flex;
+  flex-direction: column;
+}
+.website-logo {
+  align-self: center;
+  width: 80px;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.input-label {
+  font-size: 10px;
+}
+.check-box {
+  align-self: flex-start;
+  margin-bottom: 15px;
+}
+.login-button {
+  border-radius: 6px;
+  background-color: #088c03;
+  color: #ffffff;
+  padding: 8px;
+  border: none;
+  outline: none;
+}
+.error-message {
+  color: #ef4444;
+  font-size: 12px;
+}
