@@ -4,7 +4,7 @@
   width:100vw;
   display: flex;
   justify-content: space-between;
-  background-color: rgba(216, 216, 216, 0.2);
+  background-color: #1E293B;
 }
 .logo {
   display: none;
@@ -21,7 +21,7 @@
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-top: 1px solid rgb(169, 167, 167);
-    background-color: #ffffff;
+    background-color: #1E293B;
   }
   .Links {
     display: flex;
@@ -37,7 +37,7 @@
   outline: none;
   font-size: 16px;
   color:black
-}
+  }
 
   .logout-btn {
     display: flex;
@@ -69,7 +69,7 @@
 }
 .Links {
   text-decoration: none;
-  color: #000000;
+  color: #FFFFFF;
   font-size: 16px;
 }
 .logout-btn {

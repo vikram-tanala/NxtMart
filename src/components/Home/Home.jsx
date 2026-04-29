@@ -44,7 +44,7 @@ const Home = () => {
           products: each.products,
         }))
         setProductsList(updatedData)
-        setActiveCategory(updatedData[0]?.name || '') // handle empty data
+        setActiveCategory('All') 
         setApiStatus(apiStatusConstants.success)
       } else {
         setApiStatus(apiStatusConstants.failure)
@@ -59,6 +59,9 @@ const Home = () => {
   }
 
   const getFilteredData = () => {
+    if (activeCategory === 'All') {
+      return productsList
+    }
     return productsList.filter(each => each.name === activeCategory)
   }
 
@@ -112,7 +115,7 @@ const Home = () => {
       <Header />
       <div className="home-container">
         <Category
-          details={productsList}
+          details={[{ name: 'All' }, ...productsList]}
           updateActiveCategory={updateActiveCategory}
           activeCategory={activeCategory}
         />

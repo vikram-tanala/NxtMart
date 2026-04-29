@@ -50,9 +50,7 @@ const ProductCard = ({details}) => {
             >
               -
             </button>
-            <p className="quantity" >
-              {quantity}
-            </p>
+            <span className="quantity-display">{quantity}</span>
             <button
               type="button"
               className="control-btn"
