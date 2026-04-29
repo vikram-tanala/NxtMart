@@ -28,6 +28,9 @@ class App extends Component {
   removeAllCartItem = () => {
     this.setState({ cartList: [] })
   }
+  removeAllCartItems = () => {
+    setCartList([]) // Sets the cart back to an empty array
+  }
 
   incrementCartItemQuantity = id => {
     this.setState(prevState => ({
